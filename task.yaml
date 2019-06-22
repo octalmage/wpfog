@@ -1,0 +1,8 @@
+# docker image settings, required section
+tag: "wp"
+container:
+# Image name to start on worker, required param.
+  image: httpd@sha256:b5f21641a9d7bbb59dc94fb6a663c43fbf3f56270ce7c7d51801ac74d2e70046
+  ssh_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMINCxTBuqyiJDcm9XKNJHtaHUv9ZD+9oXBX31cNgqJqVXOEbhpHDBNdAYShHZ9pCTl7vjd5eerpXEHDMTY9I962lAlORXn5ePFSOzReqUJ6dCwfid+2EFLjmVE3zZJPgoWEtEMFlB62OVP9kXRdP3IqhO26RkSg8vkexqrwQTfMBZKEzI3iicTfpo/uXQA5rXnqP6l6gOTbCYeTej4qSdpLQxGr0bMtUab00eg6HcXAjT0o2N7S86Wg083rWSLfrc8Zt4nCBzovfDCOE38+vSNA/0fKZkrYdglc1aT8oHKX1hEEXdBts4JIEUJuSn/ccsNCb2KjuM3ncAOkXBhRCV jstallings@wpengine.com"
+  expose:
+  - 80:80

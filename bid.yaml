@@ -1,0 +1,26 @@
+duration: 0            
+price: 0.01 USD/h                                                                                       
+identity: anonymous                                                                                                            
+tag: wp                                                                                                                        
+resources:                                                                                                                     
+  network:                                                                                                                     
+    overlay: true                                                                                                              
+    outbound: true                                                                                                             
+    incoming: true
+  benchmarks:
+    # Required RAM size in bytes.
+    ram-size: 4294967296
+    # Required storage size in bytes.
+    storage-size: 21474836480
+    # Required CPU cores. This only specifies mininum number of CPU threads, not their scheduling.
+    # To specify amount of computing power use cpu-sysbench-* parameters
+    cpu-cores: 2
+    # Minimum computing power of single CPU thread, calculated via sysbench
+    # (some abstract value, currently  it is how many times CPU can calculate first 50000 prime numbers in 10 seconds).
+    cpu-sysbench-single: 800
+    # The same as above, but for all threads, can be less than cpu-sysbench-single when you need less than 1 core.
+    cpu-sysbench-multi: 1000
+    # Download throughput in bits/s.
+    net-download: 12000
+    # Upload throughput in bits/s.
+    net-upload: 12000
